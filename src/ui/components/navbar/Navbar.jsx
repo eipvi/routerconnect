@@ -1,18 +1,23 @@
 import { NavLink } from "react-router-dom"
 import '/src/ui/sass/app.scss';
+import Avatar from '/src/public/img/cr.png';
+
 
 const Navbar = () => {
   return (
-<nav>
-    <NavLink to="/">
-    Router <span>Connect</span>
+<nav className="navbar">
+    <NavLink to="/" className="brand">
+      <img src={Avatar} alt="Router Connect" className="logo" />
     </NavLink>
-    <ul>
-      <li>
-        <NavLink to="/">Home</NavLink>
+    <ul className="link-list">
+      <li >
+        <NavLink to="/" className="navlink">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/about" className="navlink">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/login" className="navlink">Login</NavLink>
       </li>
     </ul>
 </nav> 
