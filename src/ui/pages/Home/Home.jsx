@@ -2,7 +2,7 @@ import '/src/ui/sass/app.scss';
 
 const Home = () => {
   return (
-    <div>
+    <div className='container'>
         <h2>Home</h2>
     </div>
   )
