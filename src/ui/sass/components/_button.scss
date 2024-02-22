@@ -1,0 +1,20 @@
+@import '/src/ui/sass/layout/variables';
+
+.btn {
+    padding: 12px 138px;
+    margin-top: 24px;
+    border: none;
+    color: $color-whiter;
+    font-size: 1rem;
+    background-color: $color-primary;
+    border-radius: 4px;
+    cursor: pointer;
+      // Adicione um efeito de transição suave
+    transition: background-color 0.3s;
+
+    // Quando o mouse passa sobre o botão, altere a cor
+  &:hover {
+    background-color: $color-black;
+  }
+}
+
